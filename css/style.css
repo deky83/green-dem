@@ -25,14 +25,14 @@ ul li{list-style: none !important;}
 a {text-decoration: none !important;color: #414141;}
 a, a:hover, a:active, a:focus {outline: 0 !important;transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease-in-out !important;-moz-transition: all .5s ease-in-out !important;}
 img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease-in-out !important;-moz-transition: all .5s ease-in-out !important;}
-.container {max-width: 1280px !important;}
+.container {width: 1280px !important;}
 .bold {font-weight: 900;}
 .clear {clear: both;}
 .upper {text-transform: uppercase;}
 .border-left {border-left: 1px solid #d9d9d9;}
 .mt-54 {margin-top: 54px;}
 
-.more {text-transform: uppercase;color: #fff;font-size: 14px;background-color: #414141;padding: 15px 20px; display: inline-block;position: relative;}
+.more {text-transform: uppercase;color: #fff;font-size: 14px;background-color: #414141;padding: 7px 19px; display: inline-block;position: relative;border: 1px solid #414141;}
 .more:hover {background-color: #ffbb10;color: #fff;border: 1px solid #414141;}
 /* Shine effect */
 
@@ -85,7 +85,11 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 
 /* Why Demag section */
 
-#why-demag {position: relative;display: block;min-height: 345px;width: 100%;background-color: #ffbb10;z-index: 1;}
+#why {position: relative;display: block;min-height: 345px;width: 100%;background-color: #ffbb10;z-index: 1;}
+#why .why-left, #why .why-right {float: left;width: 50%;position: relative;display: inline-block;}
+#why .why-right {background-color: #ffbb10;}
+#why .why-left {left: -7%; overflow: hidden;transform: skewX(-25deg);-ms-transform: skewX(-25deg);-webkit-transform: skewX(-25deg);}
+#why .why-left .why-img {margin-left: 85px; max-width: 990px;width: 100%; height: auto; transform: skewX(25deg);-ms-transform: skewX(25deg);-webkit-transform: skewX(25deg);}
 
 
 
@@ -95,16 +99,37 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #news .news-title {position: relative;display: block;margin-top: 40px;width: 100%;min-height: 100px;}
 #news .news-title h1 {font-size: 45px; font-family:'SourceSansPro-Semibold';}
 #news .news-title p {font-size: 15px; font-family: 'SourceSansPro-Regular';}
-#news .news-content {position: relative; display: block;width: 100%;height: auto;margin-top: 86px;min-height: 350px;}
-#news .item-image {width: 140px;height: 140px; border: 7px solid #ffbb10;}
+#news .news-content {position: relative; display: block;width: 100%;height: auto;margin-top: 86px;min-height: 350px;margin-bottom: 86px;}
+#news .item-image {width: 160px;height: 160px; border: 7px solid #ffbb10;}
 #news .item-image img {width: 100%;height: auto;}
-#news .item-title {font-family:'SourceSansPro-Semibold';font-size: 17px;}
+#news .item-title {font-family:'SourceSansPro-Semibold';font-size: 17px;padding-bottom: 3px;}
 #news .item-text {font-size: 15px;font-family: 'SourceSansPro-Regular';}
 #news p {margin: 0px;}
-#news .more {margin-top: 10px;}
+#news .more {margin-top: 8px;}
 #news .date {font-size: 14px;font-family: 'SourceSansPro-Regular';}
-#news .news-content .row {margin-bottom: 20px;}
+#news .news-content .row {margin-bottom: 40px;}
 #news .news-content .row:last-child {margin-bottom: 45px;}
+.ln-19 {line-height: 19px;}
+.pr-0 {padding-right: 0px !important;}
+.pl-0 {padding-left: 0px !important}
+
 /* Order section */
 
-#orders {position: relative;display: block;min-height: 260px;width: 100%;background-color: #ffbb10;z-index: 1;}
+#orders {position: relative;display: block;min-height: 260px;width: 100%;background-color: rgba(255,187,16,0.8);z-index: 9999999;}
+#orders .order-img {position: absolute;top: 0;right: 0;z-index: 1;display: inline-block;max-width: 975px;width: 100%;}
+
+/* Footer */
+
+#footer {overflow: hidden; position: relative; display: block;width: 100%;background-color: #07397d;width: 100%;height: 450px; border-bottom: 5px solid #ffbb10;}
+#footer .footer-left {position: relative;display: inline-block;width: 40%;height: 450px; float: left;}
+#footer .footer-right {overflow: hidden; position: relative;display: inline-block;width: 60%;height: 450px;float: left;z-index: 20;}
+#footer #map {width: 100%;height: 450px;display: block;position: relative;}
+#footer .container-custom {    z-index: 15; position: absolute;display: block;overflow: hidden;bottom: 25px; left: 0;right: 0;margin-left: auto;margin-right: auto;width: 1280px;margin: 0 auto;padding: 0px 15px;}
+#footer .company-info p, #footer .company-info a {color: #fff;font-size: 18px;font-family: 'SourceSansPro-Regular';}
+#footer .company-info {position: relative;display: inline-block;max-width: 400px;width: 100%;}
+#footer .ft-logo {max-width: 235px;width: 100%;display: inline-block;margin-bottom: 30px;}
+#footer .ft-logo img {width: 100%;height: auto;}
+#footer .ft-mail {margin-bottom: 60px;display: inline-block;position: relative;}
+#footer .law {margin-bottom: 25px;}
+#footer .ft-site {text-decoration: underline !important;}
+#footer .ft-site:hover, #footer .ft-mail:hover {color: #ffbb10;}

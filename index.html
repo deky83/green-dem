@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Demag</title>
+    <title>Tecon System d.o.o.</title>
 
     <!-- Meta tags-->
-    <meta name="title" content="Demag" />
+    <meta name="title" content="Tecon System d.o.o." />
     <meta name="description" content="" />
 
     <!-- CSS -->
@@ -142,8 +142,14 @@
         <!-- End About Us Section -->
 
         <!-- Why Demag Section -->
-        <section id="why-demag">
-            
+        <section id="why">
+            <div class="why-left">
+                <div class="why-img">
+                    <figure><img src="images/why-left.jpg" alt=""></figure>
+                </div>
+            </div>
+            <div class="why-right"></div>
+            <div class="clear"></div>
         </section>
         <!-- End of Why Demag Section -->
         
@@ -161,7 +167,7 @@
                     <div class="news-content">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
                                     <div class="news-text pull-right text-right">
                                         <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
@@ -184,7 +190,7 @@
                                     </div>
         
                                 </div>
-                                 <div class="col-lg-8 col-md-8 col-sm-8">
+                                 <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
                                     <div class="news-text pull-left text-left">
                                          <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
@@ -196,9 +202,9 @@
                             <div class="clear"></div>
 
                         </div>
-                                 <div class="row">
+                    <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
                                     <div class="news-text pull-right text-right">
                                         <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
@@ -221,7 +227,7 @@
                                     </div>
         
                                 </div>
-                                 <div class="col-lg-8 col-md-8 col-sm-8">
+                                 <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
                                     <div class="news-text pull-left text-left">
                                          <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
@@ -241,6 +247,9 @@
 
         <!-- Orders Section -->
         <section id="orders">
+            <div class="order-img">
+                <!-- <figure><img src="images/order-right.jpg" alt=""></figure> -->
+            </div>
             
         </section>
         <!-- End of orders Section -->
@@ -248,32 +257,149 @@
 
 
     
-        <footer>
-            
+        <footer id="footer">
+            <div class="footer-left"></div>
+            <div class="footer-right map-container">
+                <div id="map">
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="container-custom">
+                <div class="company-info text-left">
+                    <div class="ft-logo"><figure><img src="images/ft-logo.png" alt=""></figure></div>
+                    <p>Antifašističke borbe 21 b</p>
+                    <p>Tel/fax: (+381.11).301.78.74 | (+381.11).311.66.50</p>
+                    <p>Mob: (+381.64).877.88.00</p>
+                    <a href="emailto:office@demag.rs" class="ft-mail">office@demag.rs</a>
+
+                    <p>Copyright &copy; 2017 Tecon System d.o.o.</p>
+                    <p class="law">Sva prava zadržana</p>
+
+                    <a href="http://www.green-adv.rs/" target="_blank" class="ft-site">Izrada sajta</a>
+                </div>
+            </div>
 
         </footer>
 
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq4dNffLqH2UL24yCZyCGJcnhidFu-C8&sensor=true"></script>
+        
+                                                                                
+
          <script type="text/javascript">
-        $(document).ready(function() {
-            $('#main-slider').slick({
-                //setting-name: setting-value
-                arrows: false,
-                dots: false,
-                autoplay: true,
-                fade: true,
-                infinite: true,
-                speed: 2500,
-                pauseOnHover: false,
+                $(document).ready(function() {
+                    $('#main-slider').slick({
+                        //setting-name: setting-value
+                        arrows: false,
+                        dots: false,
+                        autoplay: true,
+                        fade: true,
+                        infinite: true,
+                        speed: 2500,
+                        pauseOnHover: false,
 
 
-            });
-        });
-   
+                    });
+                });
+           
        
-    </script>
+         </script>
+          <script>
+            function initialize() {
+                // Create an array of styles.
+                var styles = [{
+                    stylers: [{
+                        hue: "#292929"
+                    }, {
+                        saturation: -500
+                    }, {
+                        gamma: 1.18
+                    }]
+                }, {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [{
+                        lightness: -60
+                    }, {
+                        hue: "#1b1b1b"
+                    }, {
+                        gamma: 1.18
+                    }, {
+                        visibility: "on"
+                    }]
+                }, {
+                    featureType: "water",
+                    elementType: "geometry",
+                    stylers: [{
+                        hue: "#0008ff"
+                    }]
+                }];
+                // Create a new StyledMapType object, passing it the array of styles,
+                // as well as the name to be displayed on the map type control.
+                var styledMap = new google.maps.StyledMapType(styles, {
+                    name: "Tecon System d.o.o."
+                });
+
+                // Create a map object, and include the MapTypeId to add
+                // to the map type control.
+                var mapOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(44.8140398, 20.4205398),
+                    mapTypeControlOptions: {
+                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+                    }
+                };
+                var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+
+                    //Struja d.o.o.
+                        var contentString_healtbreak = '<div id="content">'+
+                            '<div id="bodyContent">'+
+                            '<h1 id="firstHeading" class="firstHeading">Tecon System d.o.o.</h1>'+
+                            '<p>Lokacija:<br /><i class="fa fa-map-marker"></i> &nbsp; Antifašističke borbe 21b, Beograd, 11000</p>'+
+                            '<p class="first-p">Telefon:Tel: +381 11  301 7874, +381 11 311 6650 </p>'+
+                            '<p></p>'+
+                            '</div>'+
+                            '</div>';
+                        
+                            
+                        var infowindow_healtbreak = new google.maps.InfoWindow({
+                          content: contentString_healtbreak
+                        });
+                        
+
+
+                //Setting icon
+                var image = {
+                    url: "images/marker-map.png",
+                    anchor: new google.maps.Point(32, 87)
+                };
+
+                //marker
+
+                    var myLatLng_healtbreak = new google.maps.LatLng(44.8140398, 20.4205398);
+                        
+                        var marker_healtbreak = new google.maps.Marker({ position: myLatLng_healtbreak, map: map, icon: image, title: 'Tecon System d.o.o.' });
+                        
+                        
+                        marker_healtbreak.addListener('click', function() {
+                            infowindow_healtbreak.open(map, this);
+                        });
+
+
+
+
+                //Associate the styled map with the MapTypeId and set it to display.
+                map.mapTypes.set('map_style', styledMap);
+                map.setMapTypeId('map_style');
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+         </script>
+
 </body>
 </html>

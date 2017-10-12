@@ -65,3 +65,63 @@ $(function(){
       }
   });
 });
+
+// Animate.js
+
+ $(document).ready(function(){
+
+                 // hide our element on page load
+                  $('.anim-cap').css('opacity', 0);
+                 
+                  $('.anim-cap').waypoint(function() {
+                      $('.anim-cap').addClass('bounceInLeft visible');
+                  }, { offset: '95%' });
+
+                 // hide our element on page load
+                  $('.aimg').css('opacity', 0);
+                 
+                  $('.aimg').waypoint(function() {
+                      $('.aimg').addClass('fadeInLeft visible');
+                  }, { offset: '100%' });
+
+                  // hide our element on page load
+                  $('.post1').css('opacity', 0);
+                 
+                  $('.post1').waypoint(function() {
+                      $('.post1').addClass('bounceInRight visible');
+                  }, { offset: '90%' });
+
+                  $('.post2').css('opacity', 0);
+                 
+                  $('.post2').waypoint(function() {
+                      $('.post2').addClass('bounceInRight visible');
+                  }, { offset: '80%' });
+
+                   $('.post3').css('opacity', 0);
+                 
+                  $('.post3').waypoint(function() {
+                      $('.post3').addClass('bounceInRight visible');
+                  }, { offset: '75%' });
+
+                   $('.post4').css('opacity', 0);
+                 
+                  $('.post4').waypoint(function() {
+                      $('.post4').addClass('bounceInRight visible');
+                  }, { offset: '70%' });
+
+                  $('.anim-l').css('opacity', 0);
+                 
+                  $('.anim-l').waypoint(function() {
+                      $('.anim-l').addClass('fadeInLeft visible');
+                  }, { offset: '70%' });
+
+                    $('.anim-r').css('opacity', 0);
+                 
+                  $('.anim-r').waypoint(function() {
+                      $('.anim-r').addClass('fadeInRight visible');
+                  }, { offset: '70%' });
+
+
+
+                 
+                });          

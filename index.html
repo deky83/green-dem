@@ -193,7 +193,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
-                                    <div class="news-text pull-right text-right">
+                                    <div class="news-text pull-right text-right anim-l animated">
                                         <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
                                         <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
@@ -216,7 +216,7 @@
         
                                 </div>
                                  <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
-                                    <div class="news-text pull-left text-left">
+                                    <div class="news-text pull-left text-left anim-r animated">
                                          <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
                                         <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
@@ -230,7 +230,7 @@
                     <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
-                                    <div class="news-text pull-right text-right">
+                                    <div class="news-text pull-right text-right anim-l animated">
                                         <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
                                         <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
@@ -253,7 +253,7 @@
         
                                 </div>
                                  <div class="col-lg-8 col-md-8 col-sm-8 ln-19 pr-0">
-                                    <div class="news-text pull-left text-left">
+                                    <div class="news-text pull-left text-left anim-r animated">
                                          <p class="date">04.10.2017</p>
                                         <p class="item-title"> <a href="#">Završeno atestiranje krana 50t</a></p>
                                         <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
@@ -358,6 +358,19 @@
                   $('.post4').waypoint(function() {
                       $('.post4').addClass('bounceInRight visible');
                   }, { offset: '70%' });
+
+                  $('.anim-l').css('opacity', 0);
+                 
+                  $('.anim-l').waypoint(function() {
+                      $('.anim-l').addClass('fadeInLeft visible');
+                  }, { offset: '70%' });
+
+                    $('.anim-r').css('opacity', 0);
+                 
+                  $('.anim-r').waypoint(function() {
+                      $('.anim-r').addClass('fadeInRight visible');
+                  }, { offset: '70%' });
+
 
 
                  

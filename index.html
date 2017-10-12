@@ -22,9 +22,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style-mobile.css">
+
+     <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -103,15 +106,19 @@
                      <div class="container">
                         <div class="slider-for" id="main-slider">
                             <div class="item">
-                              <!--   <div class="caption">
-                                    <h1>Koncept rasvete enterijera</h1>
-                                </div> -->
+                                <div class="anim-cap animated">
+                                    <div class="caption">
+                                        <h1>Rođeni za inovacije.</h1>
+                                    </div>
+                                </div>
                                 <img src="images/slide1.jpg" alt="image" draggable="false">
                             </div>
                             <div class="item">
-                                <!-- <div class="caption">
-                                    <h1>Koncept rasvete enterijera</h1>
-                                </div> -->
+                                 <div class="anim-cap animated">
+                                    <div class="caption">
+                                        <h1>Rođeni za inovacije.</h1>
+                                    </div>
+                                </div>
                                 <img src="images/slide2.jpg" alt="image" draggable="false">
                             </div>
                           
@@ -145,10 +152,28 @@
         <section id="why">
             <div class="why-left">
                 <div class="why-img">
-                    <figure><img src="images/why-left.jpg" alt=""></figure>
+                    <figure><img src="images/why-left.jpg" alt="" class="aimg animated"></figure>
                 </div>
             </div>
-            <div class="why-right"></div>
+            <div class="why-right">
+                <h1 class="post1 animated">Zašto baš Demag kranovi?</h1>
+                <div class="one-why">
+                    <div class="round-number">1</div>
+                    <div class="why-info post2 animated"><p>Saradnja Tecon Sistema i Demag Cranes-a, je počela pre tri godine. Veliki broj realizovanih projekata</p></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="one-why">
+                    <div class="round-number">2</div>
+                    <div class="why-info post3 animated"><p>Saradnja Tecon Sistema i Demag Cranes-a, je počela pre tri godine. Veliki broj realizovanih projekata</p></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="one-why">
+                    <div class="round-number">3</div>
+                    <div class="why-info post4 animated"><p>Saradnja Tecon Sistema i Demag Cranes-a, je počela pre tri godine. Veliki broj realizovanih projekata</p></div>
+                    <div class="clear"></div>
+                </div>
+              
+            </div>
             <div class="clear"></div>
         </section>
         <!-- End of Why Demag Section -->
@@ -286,10 +311,58 @@
         
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript" src="js/jquery.waypoints.js"></script>
+        <!-- <script type="text/javascript" src="js/noframework.waypoints.js"></script> -->
         <script src="js/main.js"></script>
+
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq4dNffLqH2UL24yCZyCGJcnhidFu-C8&sensor=true"></script>
         
-                                                                                
+        <script type="text/javascript">
+             $(document).ready(function(){
+
+                 // hide our element on page load
+                  $('.anim-cap').css('opacity', 0);
+                 
+                  $('.anim-cap').waypoint(function() {
+                      $('.anim-cap').addClass('bounceInLeft visible');
+                  }, { offset: '95%' });
+
+                 // hide our element on page load
+                  $('.aimg').css('opacity', 0);
+                 
+                  $('.aimg').waypoint(function() {
+                      $('.aimg').addClass('fadeInLeft visible');
+                  }, { offset: '100%' });
+
+                  // hide our element on page load
+                  $('.post1').css('opacity', 0);
+                 
+                  $('.post1').waypoint(function() {
+                      $('.post1').addClass('bounceInRight visible');
+                  }, { offset: '90%' });
+
+                  $('.post2').css('opacity', 0);
+                 
+                  $('.post2').waypoint(function() {
+                      $('.post2').addClass('bounceInRight visible');
+                  }, { offset: '80%' });
+
+                   $('.post3').css('opacity', 0);
+                 
+                  $('.post3').waypoint(function() {
+                      $('.post3').addClass('bounceInRight visible');
+                  }, { offset: '75%' });
+
+                   $('.post4').css('opacity', 0);
+                 
+                  $('.post4').waypoint(function() {
+                      $('.post4').addClass('bounceInRight visible');
+                  }, { offset: '70%' });
+
+
+                 
+                });          
+        </script>                                                                        
 
          <script type="text/javascript">
                 $(document).ready(function() {

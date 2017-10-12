@@ -32,6 +32,16 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 .border-left {border-left: 1px solid #d9d9d9;}
 .mt-54 {margin-top: 54px;}
 
+/* Required */
+
+.hidden{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1 !important;
+}
+
 .more {text-transform: uppercase;color: #fff;font-size: 14px;background-color: #414141;padding: 7px 19px; display: inline-block;position: relative;border: 1px solid #414141;}
 .more:hover {background-color: #ffbb10;color: #fff;border: 1px solid #414141;}
 /* Shine effect */
@@ -75,7 +85,11 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #slider {position: relative; display: block;height: 510px;width: 100%;background-color: #f3f3f3;}
 #main-slider {position: relative;left: 0;right: 0;height: 545px;width: 100%;overflow: hidden;}
 #main-slider img {position: relative;left: 0;bottom: 0;}
-
+#slider .caption { transform: skewX(-25deg);-ms-transform: skewX(-25deg);-webkit-transform: skewX(-25deg);max-width: 700px;width: 100%;z-index: 9999; height: 115px;background-color: rgba(9,66,143,0.9);position: absolute;display: inline-block;left: -27px; bottom: 75px;}
+#slider .item {position: relative; width: 100%;height: 545px;}
+#slider .caption h1 {transform: skewX(25deg);-ms-transform: skewX(25deg);-webkit-transform: skewX(25deg);color: #fff;font-size: 66px;font-family: 'SourceSansPro-Semibold';padding-left: 65px;}
+#slider .caption h1:before {content: ''; height: 52px;width: 7px;background-color: #ffbb10;display: inline-block;position: relative;left: -9px;top: 4px;}
+#slider .anim-cap {max-width: 700px;width: 100%;z-index: 9999;position: absolute;display: inline-block;left: 0px; bottom: 0px;}
 /* About-us section*/
 
 #about-us {position: relative; display: block;height: 412px;}
@@ -88,11 +102,13 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #why {position: relative;display: block;min-height: 345px;width: 100%;background-color: #ffbb10;z-index: 1;}
 #why .why-left, #why .why-right {float: left;width: 50%;position: relative;display: inline-block;}
 #why .why-right {background-color: #ffbb10;}
-#why .why-left {left: -7%; overflow: hidden;transform: skewX(-25deg);-ms-transform: skewX(-25deg);-webkit-transform: skewX(-25deg);}
+#why .why-left {left: -85px; overflow: hidden;transform: skewX(-25deg);-ms-transform: skewX(-25deg);-webkit-transform: skewX(-25deg);}
 #why .why-left .why-img {margin-left: 85px; max-width: 990px;width: 100%; height: auto; transform: skewX(25deg);-ms-transform: skewX(25deg);-webkit-transform: skewX(25deg);}
-
-
-
+#why .why-right h1 {margin-left: 30px; margin-top: 30px; font-size: 36px;font-family:'SourceSansPro-Semibold';margin-bottom: 18px;}
+#why .round-number {text-align: center; width: 65px;height: 65px;border: 5px solid #fff; border-radius: 50%;float: left;display: inline-block;font-size: 35px;}
+#why .why-info {z-index: 99999; padding-top: 7px; float: left;position: relative;display: inline-block;max-width: 445px; width: 100%;margin-left: 25px;}
+#why .why-info p {color: #fff;font-size: 18px;font-family:'SourceSansPro-Semibold';}
+#why .one-why {position: relative;display: inline-block;min-height: 65px;max-width: 538px; width: 100%;margin-bottom: 8px;margin-left: 30px;}
 /* Newssection */
 
 #news{position: relative;display: block;min-height: 640px;width: 100%;}

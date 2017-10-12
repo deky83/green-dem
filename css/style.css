@@ -71,9 +71,9 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #header .site a {text-align: center;margin:auto;display: block;position: relative;}
 #header .lang p {padding-left: 25px; }
 #header .site a:hover {color:#09428f;}
-#header .submenu-lang {visibility: hidden;position: relative;}
-#header .lang-menu .has-sub-lang:hover .submenu-lang {visibility: visible !important;transition: all .5s ease !important;-webkit-transition: all .5s ease !important;-moz-transition: all .5s ease !important;}
-#header .lang-menu .submenu-lang {background-color: #fff;width: 75px;height: 40px;position: relative; display: block;top: -4px;right: 13px;z-index: 9999;}
+#header .lang-submenu {visibility: hidden;position: relative;}
+#header .lang-menu .has-sub-lang:hover .lang-submenu {visibility: visible !important;transition: all .5s ease !important;-webkit-transition: all .5s ease !important;-moz-transition: all .5s ease !important;}
+#header .lang-menu .lang-submenu {background-color: #fff;width: 75px;height: 40px;position: relative; display: block;top: -4px;right: 13px;z-index: 9999;}
 #header .lang-menu li {padding-left: 15px;}
 #header .lang-menu {position: relative;display: inline-block;}
 #header .lang-menu li {position: relative;}
@@ -191,3 +191,52 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #footer .law {margin-bottom: 25px;}
 #footer .ft-site {text-decoration: underline !important;}
 #footer .ft-site:hover, #footer .ft-mail:hover {color: #ffbb10;}
+
+/* Unutrasnja strana */
+
+#feature {position: relative;display: block;width: 100%;height: 152px;background-color: #f3f3f3;z-index: 1;}
+#feature .feature-img {position: relative;display: block;height: 172px;max-width: 1980px; width: 100%;background: url(../images/feature1.jpg)  no-repeat center center;z-index: 9999;}
+#feature .caption-feat {margin-left: -16px; transform: skewX(-25deg);-ms-transform: skewX(-25deg);-webkit-transform: skewX(-25deg);max-width: 415px;width: 100%;z-index: 9999; height: 70px;background-color: rgba(9,66,143,0.9);position: relative;display: inline-block;}
+#feature .caption-feat h1 {position: relative; display: block;bottom: 6px; transform: skewX(25deg);-ms-transform: skewX(25deg);-webkit-transform: skewX(25deg);color: #fff;font-size: 30px;font-family: 'SourceSansPro-Semibold';padding-left: 43px;}
+#feature .caption-feat h1:before {content: ''; height: 34px;width: 9px;background-color: #ffbb10;display: inline-block;position: relative;left: -9px;top: 4px;}
+#feature .feat-anim { margin-top: 58px; transform: skewX(25deg);-ms-transform: skewX(25deg);-webkit-transform: skewX(25deg); height: 70px; max-width: 415px;width: 100%;z-index: 9999;position: relative;display: inline-block;overflow: hidden;}
+
+/* Secion All product */
+
+#allproduct {position: relative;display: block;min-height: 1657px;width: 100%;}
+
+#allproduct {background-color: #fff;min-height: 1314px;width: 100%;position: relative;display: block; color: #5c5c5c;}
+#allproduct h1 {font-family: 'SourceSansPro-Semibold'; font-size: 25px;}
+.cat-list {position: relative;display: inline-block;float: left;height: auto;max-width: 277px;width: 100%; margin-right: 65px;}
+.all-products {position: relative;height: auto;float: left;max-width: 733px;width:100%;padding-bottom: 45px;}
+.cat-list .list-title, #allproduct .allproducts-title {border-bottom: 1px solid #d5d5d5;width: 100%;display: block;position: relative;padding: 38px 0px 0px 0px;}
+#allproduct h1 a:hover {opacity: 0.5;}
+.cat-list .list-menu li a { transition: all 0.3s ease-in-out; font-family: 'SourceSansPro-Regular';font-size: 15px;text-transform: uppercase;text-align: left;}
+.cat-list .list-menu li {padding: 6px 0px;}
+.cat-list .list-menu li:first-child {padding-top: 16px !important;}
+.cat-list .list-menu li a:hover {color: #ffc526 !important;transition:all .3s ease-in-out;}
+.cat-list .list-menu ul li ul li {margin-left: 45px;}
+.cat-list .list-menu {display: block;position: relative;}
+.active-cat {border-top: 5px solid #ffc526 !important; }
+.side li ul {position: relative;margin-top: 10px;}
+.cat-list .list-menu .side li ul a {text-transform: none !important;}
+.cat-list .list-menu ul li .sub-menu li:nth-child(1){margin-bottom: 5px;}
+.cat-list .list-menu ul li ul li a {color: #424546; font-size: 15px;font-family: 'SourceSansPro-Regular';}
+.cat-list .list-menu ul li ul li .active {color:#ffc526 !important;}
+.side {display: none;}
+.side .loaded {display: block !important;}
+#allproduct .oneproduct-info {font-size: 15px;font-family: 'SourceSansPro-Regular';margin-bottom: 28px;}
+#allproduct .oneproduct-info p:first-child {padding-bottom: 22px;}
+#allproduct .oneproduct-info h1 {font-family: 'SourceSansPro-Semibold';font-size: 20px;margin-top: 30px;}
+#allproduct .oneproduct-info-list {font-size: 15px;font-family: 'SourceSansPro-Regular';position: relative;display: block;padding-top: 20px;}
+#allproduct .oneproduct-info-list p:first-child {padding-bottom: 22px;}
+#allproduct .oneproduct-info-list a:hover h1 {color: #ffbb10;}
+#allproduct .oneproduct-info-list h1 {transition: all .3s ease-in-out !important;-webkit-transition: all .3s ease-in-out !important;-moz-transition: all .3s ease-in-out !important;font-family: 'SourceSansPro-Semibold';font-size: 20px;margin-top: 30px;}
+#allproduct .item-image-list {overflow: hidden; width: 207px;height: 207px; border: 7px solid #ffbb10;-webkit-transition: 0.5s;    cursor: pointer;    position: relative;}
+#allproduct .item-image-list img {width: 100%;height: auto;}
+#allproduct .item-image-list:hover {border: 7px solid #fff;-webkit-transition: 0.5s;}
+#allproduct .item-image-list:hover img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease-in-out !important;-moz-transition: all .5s ease-in-out !important;transform: scale(1.1);}
+.item-image-list::before, .item-image-list::after {width: 100%;height:100%;z-index: 9999;content:'';position: absolute;top:0;left:0;box-sizing: border-box;-webkit-transform: scale(0);transition: 0.5s;}
+.item-image-list:hover::after, .item-image-list:hover::before {-webkit-transform: scale(1) !important;}
+.mb-25 {margin-bottom: 25px;}
+.pl-0 {padding-left: 0px !important;}

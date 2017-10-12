@@ -77,6 +77,11 @@ $(function(){
                       $('.anim-cap').addClass('bounceInLeft visible');
                   }, { offset: '95%' });
 
+                   $('.feat-anim').css('opacity', 0);
+                 
+                  $('.feat-anim').waypoint(function() {
+                      $('.feat-anim').addClass('bounceInLeft visible');
+                  }, { offset: '90%' });
                  // hide our element on page load
                   $('.aimg').css('opacity', 0);
                  

@@ -66,11 +66,21 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #header .top-header {position: relative;display: block;width: 100%;height: 42px;border-bottom: 1px solid #d9d9d9;}
 #header .top-content {position: relative;max-width: 366px; width: 100%;display: block;}
 #header .site {max-width: 150px;width: 100%;border-right: 1px solid #d9d9d9;position: relative;display: inline-block;height: 42px;line-height: 38px;}
-#header .lang {position: relative;max-width: 215px;width: 100%;display: inline-block;height: 42px;line-height: 38px;}
+#header .lang {position: relative;max-width: 215px;width: 100%;display: inline-block;height: 42px;line-height: 39px;}
 #header .site a, #header .lang p {color: #414141;font-family: 'SourceSansPro-Semibold';font-size: 15px;}
 #header .site a {text-align: center;margin:auto;display: block;position: relative;}
 #header .lang p {padding-left: 25px; }
 #header .site a:hover {color:#09428f;}
+#header .submenu-lang {visibility: hidden;position: relative;}
+#header .lang-menu .has-sub-lang:hover .submenu-lang {visibility: visible !important;transition: all .5s ease !important;-webkit-transition: all .5s ease !important;-moz-transition: all .5s ease !important;}
+#header .lang-menu .submenu-lang {background-color: #fff;width: 75px;height: 40px;position: relative; display: block;top: -4px;right: 13px;z-index: 9999;}
+#header .lang-menu li {padding-left: 15px;}
+#header .lang-menu {position: relative;display: inline-block;}
+#header .lang-menu li {position: relative;}
+#header .lang-menu li a img {transition: none !important}
+#header .lang-menu li a {position: relative;display: inline-block;transition: all .2s ease !important;-webkit-transition: all .2s ease !important;-moz-transition: all .2s ease !important;}
+.lang-select {position: absolute;width: 10px;height: 10px;background-image: url(../images/select.png);background-repeat: no-repeat;background-position: 50% 50%;top: 16px; right: -25px;}
+#header .lang-menu .has-sub-lang .lang-title {position: relative;top: 2px; left: 8px;}
 
 #header .bottom-header {position: relative; display: block;min-height: 178px;width: 100%;}
 #header .brand {position: relative;display: inline-block;max-width: 415px; width: 100%;}
@@ -90,6 +100,14 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 #header .navigation ul li.active {background-color: #ffbb10;}
 #header .navigation ul li:hover  { background-color: #ffbb10;background-position: center 14px; padding: 16px 25px;}
 /*#header .navigation ul li.active:hover a { color: #fff;}*/
+
+/* Padajuci meni */
+
+#header .main-menu li .submenu-main {position: absolute;visibility: hidden; opacity: 0;transform: translateY(-2em); transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;width: 285px;background-color:  #09428f;top: 65px;left: 0; z-index: 999999999;}
+#header .main-menu .submenu-main li { width: 100%; height: 55px !important;  transition: all .5s ease-in-out;position: relative;display: inline-block; margin-right: 0px !important;}
+#header .main-menu .submenu-main li a { float: none;color: #fff;padding:0px;text-decoration: none;display: block;text-align: left;font-size: 15px;font-family: 'SourceSansPro-Semibold';}
+#header .main-menu .submenu-main li a:hover {color: #fff !important; transition: all .6s ease-in-out;}
+#header .main-menu .has-sub:hover .submenu-main, #header .main-menu .has-sub:hover .lvl2 {visibility: visible !important;opacity: 1;transform: translateY(0%);transition-delay: 0s, 0s, 0.3s;}
 
 /* Slider section*/
 

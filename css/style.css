@@ -203,7 +203,7 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 
 /* Secion All product */
 
-#allproduct {position: relative;display: block;min-height: 1657px;width: 100%;}
+#allproduct {position: relative;display: block;min-height: 2000px;width: 100%;}
 
 #allproduct {background-color: #fff;min-height: 1314px;width: 100%;position: relative;display: block; color: #5c5c5c;}
 #allproduct h1 {font-family: 'SourceSansPro-Semibold'; font-size: 25px;}
@@ -212,8 +212,7 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 .cat-list .list-title, #allproduct .allproducts-title {border-bottom: 1px solid #d5d5d5;width: 100%;display: block;position: relative;padding: 38px 0px 0px 0px;}
 #allproduct h1 a:hover {opacity: 0.5;}
 .cat-list .list-menu li a { transition: all 0.3s ease-in-out; font-family: 'SourceSansPro-Regular';font-size: 15px;text-transform: uppercase;text-align: left;}
-.cat-list .list-menu li {padding: 6px 0px;}
-.cat-list .list-menu li:first-child {padding-top: 16px !important;}
+.cat-list .list-menu li {padding: 8px 0px;border-bottom: 1px solid #d5d5d5;}
 .cat-list .list-menu li a:hover {color: #ffc526 !important;transition:all .3s ease-in-out;}
 .cat-list .list-menu ul li ul li {margin-left: 45px;}
 .cat-list .list-menu {display: block;position: relative;}
@@ -240,3 +239,9 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 .item-image-list:hover::after, .item-image-list:hover::before {-webkit-transform: scale(1) !important;}
 .mb-25 {margin-bottom: 25px;}
 .pl-0 {padding-left: 0px !important;}
+
+/* Slider Gallery */
+
+.gallery-slider{position: relative;display: block;min-height: 225px;width: 100%;margin-top: 30px;margin-bottom: 145px;}
+/*.gallery-item {display: inline-block;position: relative;max-width: 200px;width: 100%;min-height: 200px;}*/
+.gallery-slider img{border: 7px solid #ffbb10; }

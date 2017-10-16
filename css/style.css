@@ -91,6 +91,9 @@ figure.effect-hera figcaption::before {
   transform-origin: 50%;
 }
 
+figure.effect-hera:hover:before {
+  display: block;
+}
 figure.effect-hera p {
   width: 100px;
   text-transform: none;
@@ -361,5 +364,5 @@ figure.effect-hera:hover p i:empty {
 /*.gallery-item {display: inline-block;position: relative;max-width: 200px;width: 100%;min-height: 200px;}*/
 .one-gall{width: 207px;height: 207px;position: relative;display: inline-block;margin-right: 5px; border: 7px solid #ffbb10; }
 .one-gall img {width: 100%;height: auto;}
-.one-gall:hover img {transform: scale(1.07);}
+.one-gall:hover img {transform: scale(1.08);}
 .one-gall:hover {background-color: rgba(65, 65, 65, 0.5);}

@@ -31,6 +31,9 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 .upper {text-transform: uppercase;}
 .border-left {border-left: 1px solid #d9d9d9;}
 .mt-54 {margin-top: 54px;}
+.mt-20 {margin-top: 20px;}
+.mt-0 {margin-top: 0px !important;}
+.mb-100 {margin-bottom: 100px !important;}
 
 /* Required */
 
@@ -61,7 +64,7 @@ figure.effect-hera {
 figure.effect-hera p {
   position: absolute;
   top: 50%;
-  left: 61%;
+  left: 66%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-50%,-50%,0);
@@ -73,7 +76,7 @@ figure.effect-hera p {
 figure.effect-hera figcaption::before {
   position: absolute;
   top: 50%;
-  left: 48%;
+  left: 50%;
   width: 145px;
   height: 145px;
   border: 2px solid #fff;
@@ -142,6 +145,8 @@ figure.effect-hera:hover h2 {
   transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
 }
 
+/*figure.effect-hera:hover img {    transform: scale(1.08);border:7px solid #414141;}*/
+
 figure.effect-hera:hover p i:empty {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0); /* just because it's stronger than nth-child */
@@ -203,9 +208,9 @@ figure.effect-hera:hover p i:empty {
 
 /* Padajuci meni */
 
-#header .main-menu li .submenu-main {position: absolute;visibility: hidden; opacity: 0;transform: translateY(-2em); transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;width: 285px;background-color:  #09428f;top: 65px;left: 0; z-index: 999999999;}
+#header .main-menu li .submenu-main {position: absolute;visibility: hidden; opacity: 0;transform: translateY(-2em); transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;width: 212px;background-color:  #09428f;top: 65px;left: 0; z-index: 999999999;}
 #header .main-menu .submenu-main li { width: 100%; height: 55px !important;  transition: all .5s ease-in-out;position: relative;display: inline-block; margin-right: 0px !important;}
-#header .main-menu .submenu-main li a { float: none;color: #fff;padding:0px;text-decoration: none;display: block;text-align: left;font-size: 15px;font-family: 'SourceSansPro-Semibold';}
+#header .main-menu .submenu-main li a { float: none;color: #fff;padding:0px;text-decoration: none;display: block;text-align: left;font-size: 15px;font-family: 'SourceSansPro-Semibold';text-transform: none !important;}
 #header .main-menu .submenu-main li a:hover {color: #fff !important; transition: all .6s ease-in-out;}
 #header .main-menu .has-sub:hover .submenu-main, #header .main-menu .has-sub:hover .lvl2 {visibility: visible !important;opacity: 1;transform: translateY(0%);transition-delay: 0s, 0s, 0.3s;}
 
@@ -353,4 +358,7 @@ figure.effect-hera:hover p i:empty {
 
 .gallery-slider{position: relative;display: block;min-height: 225px;width: 100%;margin-top: 30px;margin-bottom: 145px;}
 /*.gallery-item {display: inline-block;position: relative;max-width: 200px;width: 100%;min-height: 200px;}*/
-.gallery-slider img{border: 7px solid #ffbb10; }
+.one-gall{width: 207px;height: 207px;position: relative;display: inline-block;margin-right: 5px; border: 7px solid #ffbb10; }
+.one-gall img {width: 100%;height: auto;}
+.one-gall:hover img {transform: scale(1.07);}
+.one-gall:hover {background-color: rgba(65, 65, 65, 0.5);}

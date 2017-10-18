@@ -114,7 +114,7 @@
                                 </li>
                                 <li class="active"><a href="servisna-podrska.html">Servisna podrška</a></li>
                                 <li><a href="baza-znanja.html">Baza znanja</a></li>
-                                <li><a href="#">Novosti</a></li>
+                                <li><a href="novosti.html">Novosti</a></li>
                                 <li><a href="kontakt.html">Kontakt</a></li>
                             </ul>
                         
@@ -186,7 +186,7 @@
                                     </li>
                                     <li><a href="baza-znanja.html">Baza znanja</a>
                                     </li>
-                                    <li><a href="javascript:void(0);">Novosti</a>
+                                    <li><a href="novosti.html">Novosti</a>
                                     </li>
                                     <li><a href="kontakt.html">Kontakt</a>
                                     </li>
@@ -234,7 +234,7 @@
                         </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 pl-0">
-                                <div class="contact-form">
+                                <div class="contact-form" id="contact-form">
 
                                    <form action="#" method="post" name="form_name" id="form_id" class="form_contact" onsubmit="return false" >
                                         <div class="left-form form-group">
@@ -262,10 +262,10 @@
                                                     <div class="clear"></div> 
                                             </div>
                                               <div class="kako">
-                                               <select id="contact_via" name="contact_via" class="selectpicker">
-                                                        <option selected="true" disabled="disabled" value="">Kako želite da vam odgovorimo?</option>
-                                                        <option value="Putem email adrese">Putem email adrese</option>
-                                                        <option value="Putem telefona">Putem telefona</option>
+                                               <select id="contact_via2" name="contact_via" class="selectpicker">
+                                                        <option selected="true" disabled="disabled" value="" >Kako želite da vam odgovorimo?</option>
+                                                        <option value="opt1" class="pmail">Putem email adrese</option>
+                                                        <option value="opt2" class="ptel">Putem telefona</option>
                                                     </select>
                                                 <span class="star"></span>
                                                     <div class="clear"></div> 
@@ -279,12 +279,12 @@
                                                     if($op == 1) { $op = ' + '; $rez = $rand1 + $rand2; }
                                                     elseif($op == 2) { $op =' - '; if($rand1<$rand2) { $tmp = $rand1; $rand1 = $rand2; $rand2 = $tmp; } $rez = $rand1 - $rand2; }
                                                     ?>
-                                                <span class="star"></span>
+                                                <span class="star" id="star1"></span>
                                                     <div class="clear"></div> 
                                             </div>   
                                                 <div class="k-tel">
                                                 <input type="text" class="contact-mob" id="phone" name="phone" placeholder="Kontakt telefon" required/>
-                                                <span class="star"></span>
+                                                <span class="star" id="star2"></span>
                                                     <div class="clear"></div> 
                                             </div>        
                                                     
@@ -337,7 +337,7 @@
                 <div class="order-info">
                     <h1>Pošaljite nam zahtev za ponudu</h1>
                     <p>Ukoliko razmišljate o sveobuhvatnim rešenjima transportnih problema, ili su vam potrebna konsultativna rešenja, naš stručni tim vam stoji na raspolaganju. Do sada smo realizovali preko 500 projekata.</p>
-                    <a href="#" class="more hvr-bounce-to-right2">Pošaljite zahtev</a>
+                    <a href="servisna-podrska.html" class="more hvr-bounce-to-right2">Pošaljite zahtev</a>
                 </div>
             </div>
             
@@ -390,7 +390,19 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq4dNffLqH2UL24yCZyCGJcnhidFu-C8&sensor=true"></script>
         
                                                                              
+        <script type="text/javascript">
+              $('#contact_via2').change(function() {
+                    opt = $(this).val();
+                    if (opt=="opt1") {
+                        $('#star1').show();
+                        $('#star2').hide();
+                    }else if (opt == "opt2") {
+                        $('#star2').show();
+                        $('#star1').hide();
+                    }
+                });
 
+        </script>
          <script type="text/javascript">
                 $(document).ready(function() {
                     $('#main-slider').slick({
@@ -418,6 +430,7 @@
            
                  });
          </script>
+     
           <script>
             function initialize() {
                 // Create an array of styles.

@@ -9,7 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
+@font-face { 
   font-family: 'SourceSansPro-Semibold';
   src: url('../fonts/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SourceSansPro-Semibold.otf')  format('opentype'),
        url('../fonts/SourceSansPro-Semibold.woff') format('woff'), url('../fonts/SourceSansPro-Semibold.ttf')  format('truetype'), url('../fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg');
@@ -41,6 +41,9 @@ img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease
 .pl-0 {padding-left: 0px !important;}
 .mb-60 {margin-bottom: 60px !important;}
 .mb-20 {margin-bottom: 20px !important;}
+.mb-25 {margin-bottom: 25px !important;}
+.mb-40 {margin-bottom: 40px !important;}
+.border-bottom{ border-bottom: 1px solid #d5d5d5;}
 /* Required */
 
 .hidden{
@@ -200,7 +203,7 @@ figure.effect-hera:hover p i:empty {
 #header .bottom-header {position: relative; display: block;min-height: 178px;width: 100%;}
 #header .brand {position: relative;display: inline-block;max-width: 415px; width: 100%;}
 #header .header-info {position: relative;display: inline-block;max-width: 677px;width: 100%;}
-#header .brand img {height: auto;width: 100%;padding-top: 54px;}
+#header .brand img {height: auto;max-width: 415px;padding-top: 54px;}
 /*#header .brand:hover img {opacity: 0.8;transform: scale(1.01);cursor: pointer;}*/
 #header .info-text {padding-left: 14px;}
 #header .header-info > div {height: 54px; padding-top: 3px;}
@@ -261,8 +264,8 @@ figure.effect-hera:hover p i:empty {
 #news .news-title h1 {font-size: 45px; font-family:'SourceSansPro-Semibold';}
 #news .news-title p {font-size: 15px; font-family: 'SourceSansPro-Regular';}
 #news .news-content {position: relative; display: block;width: 100%;height: auto;margin-top: 86px;min-height: 350px;margin-bottom: 86px;}
-#news .item-image {overflow: hidden; width: 160px;height: 160px; border: 7px solid #ffbb10;-webkit-transition: 0.5s;    cursor: pointer;    position: relative;}
-#news .item-image img {width: 100%;height: auto;}
+ .item-image {overflow: hidden; width: 160px;height: 160px; border: 7px solid #ffbb10;-webkit-transition: 0.5s;    cursor: pointer;    position: relative;}
+ .item-image img {width: 100%;height: auto;}
 #news .item-title {font-family:'SourceSansPro-Semibold';font-size: 17px;padding-bottom: 3px;margin-top: 10px;}
 #news .item-title a:hover {color: #ffbb10;}
 #news .item-text {font-size: 15px;font-family: 'SourceSansPro-Regular';margin-top: 5px;}
@@ -274,8 +277,8 @@ figure.effect-hera:hover p i:empty {
 .ln-19 {line-height: 19px;}
 .pr-0 {padding-right: 0px !important;}
 .pl-0 {padding-left: 0px !important}
-#news .item-image:hover {border: 7px solid #fff;-webkit-transition: 0.5s;}
-#news .item-image:hover img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease-in-out !important;-moz-transition: all .5s ease-in-out !important;transform: scale(1.1);}
+.item-image:hover {border: 7px solid #fff;-webkit-transition: 0.5s;}
+.item-image:hover img {transition: all .5s ease-in-out !important;-webkit-transition: all .5s ease-in-out !important;-moz-transition: all .5s ease-in-out !important;transform: scale(1.1);}
 .item-image::before, .item-image::after {width: 100%;height:100%;z-index: 9999;content:'';position: absolute;top:0;left:0;box-sizing: border-box;-webkit-transform: scale(0);transition: 0.5s;}
 .bor-eff::before {border-bottom: 7px solid #414141;border-left: 7px solid #414141;-webkit-transform-origin: 0 100%;}
 .bor-eff::after {border-top: 7px solid #414141;border-right: 7px solid #414141;-webkit-transform-origin: 100% 0%;}
@@ -416,7 +419,7 @@ figure.effect-hera:hover p i:empty {
 }
 
 .settings img {transform: scale(1.05);-webkit-animation: spinreverse 10s infinite linear;cursor: pointer;}
-
+#star1, #star2 {display: none;}
 
 /* Contact page */
 
@@ -424,9 +427,9 @@ figure.effect-hera:hover p i:empty {
 .contact-page .con-add p {text-transform: uppercase; position: relative;display: inline-block;max-width: 70px;width: 100%; float: left;margin-right: 20px;padding-bottom: 0px !important;}
 .contact-page .con-add span {position: relative;display: inline-block;float: left;}
 .contact-page .con-add span a:hover {color:#ffc95b;}
-.contact-page .contact-page-title {width: 100%;display: block;position: relative;margin-left: 12px;}
-.contact-page .contact-page-title h1 {font-size: 20px !important;font-family: 'SourceSansPro-Semibold';}
-.contact-page .contact-page-title:before {content: '';height: 35px;width: 7px;background-color: #ffbb10;position: absolute;left: -14px;bottom: -7px;}
+.contact-page-title {width: 100%;display: block;position: relative;margin-left: 12px;}
+.contact-page-title h1 {font-size: 20px !important;font-family: 'SourceSansPro-Semibold';}
+.contact-page-title:before {content: '';height: 35px;width: 7px;background-color: #ffbb10;position: absolute;left: -14px;bottom: -7px;}
 
 /* Baza znanja */
 .baza .baza-info {max-width: 260px;width: 100%;position: relative;display: block;}
@@ -441,3 +444,15 @@ figure.effect-hera:hover p i:empty {
 .baza .one-b-info1 {text-align: left;}
 .baza .one-b-info2 {width: 90px;}
 .baza .baza-content .down-click:hover .baza-download{background-color: #d5d5d5; transform: scale(1.1); transition: all .4s ease-in-out !important;-webkit-transition: all .4s ease-in-out !important;-moz-transition: all .4s ease-in-out !important; }
+
+/* Novosti page */
+.novosti .date {padding-bottom: 0px !important;}
+.novosti .more {margin-top: 5px !important;}
+.novosti {margin-bottom: 80px !important;}
+.ostale-title {border-bottom: 1px solid #d5d5d5;width: 100%;display: inline-block;position: relative;}
+.ostale-title h1:before {content: '';height: 55px;width: 7px;background-color: #ffbb10;position: absolute;left: -14px;bottom: -7px;}
+.novosti .novosti-image {margin-top: 20px; position: relative;display: block;width: 100%;height: 375px;overflow: hidden;}
+.novosti .novosti-image img {width: 100%;height: auto;}
+.novosti .novosti-date {background-color: #ffbb10; color: #fff;padding:10px;float: right;text-align: center;position: relative;display: block;}
+.novosti .novosti-date p {margin-bottom: 0px !important;}
+#star1, #star2 {display: none;}
